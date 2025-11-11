@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVisão | Painel Interativo de Sustentabilidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="./assets/logo.png" alt="Logo do projeto EcoVisão">
+        </div>
+        <h1>Tecnologia e dados para um futuro sustentável</h1>
+    </header>
+
+    <section class="intro">
+        <h2>Sobre o projeto</h2>
+        <p>
+            O <strong>EcoVisão</strong> é um painel interativo que apresenta dados reais sobre sustentabilidade no Brasil.
+            Seu objetivo é facilitar o acesso a informações ambientais e incentivar a conscientização sobre consumo consciente,
+            energia limpa e gestão de resíduos sólidos urbanos.
+        </p>
+    </section>
+
+    <main>
+        <section class="card">
+            <h3>Energia Renovável no Brasil (%)</h3>
+            <p class="description">
+                A matriz energética brasileira é uma das mais limpas do mundo. O gráfico abaixo mostra a evolução da participação
+                das fontes renováveis na produção total de energia.
+            </p>
+            <canvas id="graficoEnergia" aria-label="Gráfico sobre energia renovável no Brasil" role="img"></canvas>
+        </section>
+
+        <section class="card">
+            <h3>Composição dos Resíduos Sólidos Urbanos</h3>
+            <p class="description">
+                Os resíduos sólidos urbanos são compostos por diversos materiais. Este gráfico apresenta as proporções estimadas
+                dos principais tipos coletados no Brasil.
+            </p>
+            <canvas id="graficoResiduos" aria-label="Gráfico sobre a composição dos resíduos sólidos urbanos no Brasil" role="img"></canvas>
+        </section>
+
+        <section class="card">
+            <h3>Municípios com Coleta Seletiva</h3>
+            <p class="description">
+                A coleta seletiva é um passo essencial para o reaproveitamento e reciclagem de materiais. Veja a proporção de
+                municípios que adotam essa prática no país.
+            </p>
+            <canvas id="graficoColeta" aria-label="Gráfico sobre municípios com coleta seletiva no Brasil" role="img"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto de extensão — <strong>EcoVisão</strong></p>    
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
