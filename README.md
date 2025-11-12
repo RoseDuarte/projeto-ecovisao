@@ -37,3 +37,7 @@ O **EcoVisão** tem como propósito facilitar o acesso a informações ambientai
   Fonte: [ibge.gov.br](https://www.ibge.gov.br/)
 
 ---
+
+## 🧾 Licença
+
+Este projeto está licenciado sob os termos da **Licença MIT**.  
